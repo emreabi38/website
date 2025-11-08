@@ -813,12 +813,6 @@
                     </div>
                 </div>
                 <div class="gallery-item">
-                    <img src="https://images.unsplash.com/photo-1564013799136-9dc6d0f3a935?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Terrasse mit Naturstein">
-                    <div class="gallery-overlay">
-                        <h3>Terrasse mit Naturstein</h3>
-                    </div>
-                </div>
-                <div class="gallery-item">
                     <img src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80" alt="Wellness-Badezimmer">
                     <div class="gallery-overlay">
                         <h3>Wellness-Badezimmer</h3>
@@ -904,7 +898,7 @@
                         </div>
                         <div class="contact-details">
                             <h3>Öffnungszeiten</h3>
-                            <p>Mo - Fr: 7:00 - 17:00 Uhr</p>
+                            <p>Mo - Fr: 8:00 - 17:00 Uhr</p>
                             <p>Samstag: Nach Vereinbarung</p>
                         </div>
                     </div>
@@ -1052,64 +1046,4 @@
         
         datenschutzLink.addEventListener('click', (e) => {
             e.preventDefault();
-            datenschutzModal.style.display = 'block';
-        });
-        
-        closeButtons.forEach(button => {
-            button.addEventListener('click', () => {
-                impressumModal.style.display = 'none';
-                datenschutzModal.style.display = 'none';
-            });
-        });
-        
-        // Close modal when clicking outside
-        window.addEventListener('click', (e) => {
-            if (e.target === impressumModal) {
-                impressumModal.style.display = 'none';
-            }
-            if (e.target === datenschutzModal) {
-                datenschutzModal.style.display = 'none';
-            }
-        });
-        
-        // Form submission
-        const contactForm = document.getElementById('contactForm');
-        contactForm.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // In a real implementation, you would send the form data to a server here
-            alert('Vielen Dank für Ihre Nachricht! Wir werden uns in Kürze bei Ihnen melden.');
-            contactForm.reset();
-        });
-        
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                const targetId = this.getAttribute('href');
-                if(targetId === '#') return;
-                
-                const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    window.scrollTo({
-                        top: targetElement.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-        
-        // Header scroll effect
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('header');
-            if (window.scrollY > 100) {
-                header.style.background = 'rgba(26, 26, 26, 0.98)';
-                header.style.padding = '0.7rem 0';
-            } else {
-                header.style.background = 'rgba(26, 26, 26, 0.95)';
-                header.style.padding = '1rem 0';
-            }
-        });
-    </script>
-</body>
-</html>
+            datensch
