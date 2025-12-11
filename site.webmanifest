@@ -1,0 +1,11 @@
+{
+  "name": "EMKO-Fliesen e.U.",
+  "short_name": "EMKO",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#D2691E",
+  "background_color": "#1a1a1a",
+  "display": "standalone"
+}
